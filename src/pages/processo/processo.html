@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Processos</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let processo of processos">
+    <ion-card-content>
+      <ion-card-title>
+        {{processo.processo}}
+      </ion-card-title>
+      <p>
+        {{processo.assunto}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
